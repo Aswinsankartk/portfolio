@@ -10,18 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="header">
         <h2 class="header-text">AS</h2>
         <nav>
             <!-- <a href="#">Home</a> -->
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Skills</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <h1 class="title">Aswin Sankar TK</h1>
             <h3 class="role">Full Stack Web Developer</h3>
             <div class="line line-hero"></div>
@@ -34,10 +34,15 @@
                 real problems. Currently focused on improving my full-stack 
                 skills through hands-on projects and continuous learning.
             </p>
-            <button class="view-projects">View Projects</button>
-            <button class="resume">Download Resume</button>
+            <a href="https://github.com/Aswinsankartk?tab=repositories" target="_blank">
+                <button class="view-projects">View Projects</button>
+            </a>
+            <a href="assets/Resume-AswinSankar.pdf" target="_blank" download class="dwnld-resume-btn">
+                <button class="resume">Download Resume</button>
+            </a>
+            
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2 class="section-text">Skills</h2>
             <div class="line-skills"></div>
             <div class="skills-flex">
@@ -72,27 +77,31 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="section-text">Projects</h2>
             <div class="project-flex">
                 <div class="card">
-                    <h2>BingeStudy</h2>
+                    <h2>BingeStudy <span>Ongoing</span></h2>
                     <p class="desc">Study platform for group notes sharing</p>
                     <div class="line"></div>
                     <p class="used-tech">HTML, CSS, Firebase</p>
-                    <button class="view-projects">View Project</button>
+                    <a href="https://github.com/Aswinsankartk/kamova#" target="_blank">
+                        <button class="view-projects">View Project</button>
+                    </a>
                 </div>
                 <div class="card">
                     <h2>Kamova</h2>
                     <p class="desc">Get weather based on request</p>
                     <div class="line"></div>
                     <p class="used-tech">HTML, CSS, JS, Weather API</p>
-                    <button class="view-projects">View Project</button>
+                    <a href="https://github.com/Aswinsankartk/bingestudy" target="_blank">
+                        <button class="view-projects">View Project</button>
+                    </a>
                 </div>
             </div>
             
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about">
             <h2 class="section-text">About Me</h2>
             <div class="line"></div>
             <p class="p1">I’m a <span>computer science student</span> passionate 
@@ -105,7 +114,7 @@
                 continuously <span>refining my skills through 
                 practical projects</span> rather than just theory.</p>
         </section></p>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2 class="section-text">Contact</h2>
             <div class="line"></div>
             <p>Interested in working together or discussing ideas? 
@@ -141,6 +150,8 @@
                 </div>
             </div>
         </section>
+        <button id="backToTop" aria-label="Back to top">↑</button>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
