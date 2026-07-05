@@ -1,165 +1,374 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aswin Sankar - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header id="header">
-        <h2 class="header-text">AS</h2>
-        <nav>
-            <svg class="icons menu" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Menu">
-                    <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
-                    <line x1="5" y1="7" x2="19" y2="7" id="Path" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
-                    <line x1="5" y1="17" x2="19" y2="17" id="Path" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
-                    <line x1="5" y1="12" x2="19" y2="12" id="Path" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
-                </g></g></svg>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <h2 class="header-text">AS</h2>
+      <nav>
+        <svg
+          class="icons menu"
+          viewBox="0 0 24 24"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <g
+            id="Page-1"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g id="Menu">
+              <rect
+                id="Rectangle"
+                fill-rule="nonzero"
+                x="0"
+                y="0"
+                width="24"
+                height="24"
+              ></rect>
+              <line
+                x1="5"
+                y1="7"
+                x2="19"
+                y2="7"
+                id="Path"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></line>
+              <line
+                x1="5"
+                y1="17"
+                x2="19"
+                y2="17"
+                id="Path"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></line>
+              <line
+                x1="5"
+                y1="12"
+                x2="19"
+                y2="12"
+                id="Path"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></line>
+            </g>
+          </g>
+        </svg>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
     <main>
-        <section class="hero" id="hero">
-            <h1 class="title">Aswin Sankar TK</h1>
-            <h3 class="role">Full Stack Web Developer</h3>
-            <div class="line line-hero"></div>
-            <p class="tagline">Building clean, scalable, and 
-                user-focused web experiences</p>
-            <p class="intro">
-                I’m a Full Stack Web Developer with a strong foundation in HTML, 
-                CSS, and modern web technologies. I enjoy building clean, 
-                responsive interfaces and practical applications that solve 
-                real problems. Currently focused on improving my full-stack 
-                skills through hands-on projects and continuous learning.
+      <section class="hero" id="hero">
+        <h1 class="title">Aswin Sankar TK</h1>
+        <h3 class="role">Full Stack (MERN) Developer</h3>
+        <div class="line line-hero"></div>
+        <p class="tagline">
+          Building scalable web applications with modern technologies, clean
+          architecture, and exceptional user experiences.
+        </p>
+        <p class="intro">
+          I'm a Full Stack (MERN) Developer passionate about building modern,
+          high-performance web applications. I enjoy transforming ideas into
+          production-ready products using React, Next.js, Node.js, Express, and
+          Supabase. From responsive user interfaces to secure backend APIs, I
+          focus on writing clean, maintainable code that delivers real value.
+        </p>
+        <div class="hero-buttons">
+          <a
+            href="https://github.com/Aswinsankartk?tab=repositories"
+            target="_blank"
+          >
+            <button class="view-projects">View Projects</button>
+          </a>
+          <a
+            href="assets/Resume-AswinSankar.pdf"
+            target="_blank"
+            download
+            class="dwnld-resume-btn"
+          >
+            <button class="resume">Download Resume</button>
+          </a>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <h2 class="section-text">Skills</h2>
+        <div class="line-skills"></div>
+        <div class="skills-flex">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <div class="line"></div>
+            <ul>
+              <li>React.js</li>
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Tailwind CSS</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>shadcn/ui</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <div class="line"></div>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>REST APIs</li>
+              <li>JWT Authentication</li>
+              <li>Google OAuth</li>
+              <li>Supabase</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Tools & Others</h3>
+            <div class="line"></div>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Vercel</li>
+              <li>Postman</li>
+              <li>VS Code</li>
+              <li>Chrome DevTools</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="experience" id="experience">
+        <h2 class="section-text">Experience</h2>
+        <div class="line"></div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <h2>MERN Stack Developer Intern</h2>
+            <span>Apr 2026 – May 2026</span>
+          </div>
+
+          <h3>Codec Technologies • Remote</h3>
+
+          <p class="experience-desc">
+            Completed a structured MERN Stack internship focused on building
+            scalable full-stack applications using modern JavaScript
+            technologies. Worked across frontend, backend, REST APIs,
+            authentication, deployment, and collaborative Git workflows.
+          </p>
+
+          <div class="line"></div>
+
+          <ul class="experience-list">
+            <li>
+              Built and deployed a Task Management application using MongoDB,
+              Express.js, React.js, and Node.js.
+            </li>
+
+            <li>
+              Implemented secure JWT Authentication and complete CRUD
+              functionality for tasks and users.
+            </li>
+
+            <li>
+              Developed RESTful APIs and connected them with responsive React
+              user interfaces.
+            </li>
+
+            <li>
+              Used Git, GitHub, Postman, and VS Code throughout the development
+              workflow.
+            </li>
+
+            <li>
+              Gained practical experience in full-stack development, debugging,
+              deployment, and clean code practices.
+            </li>
+          </ul>
+
+          <div class="experience-tech">
+            <span>MongoDB</span>
+            <span>Express.js</span>
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>JWT</span>
+            <span>REST API</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Postman</span>
+            <span>Vercel</span>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <h2 class="section-text">Featured Work</h2>
+        <div class="project-flex">
+          <div class="card">
+            <h2>BingeStudy</h2>
+            <p class="desc">
+              AI-powered collaborative study platform that enables students to
+              create private study groups, share notes and resources,
+              communicate in real time, and learn with an integrated AI
+              assistant.
             </p>
-            <div class="hero-buttons">
-                <a href="https://github.com/Aswinsankartk?tab=repositories" target="_blank">
-                <button class="view-projects">View Projects</button>
-                </a>
-                <a href="assets/Resume-AswinSankar.pdf" target="_blank" download class="dwnld-resume-btn">
-                    <button class="resume">Download Resume</button>
-                </a>
+            <!-- <div class="line"></div> -->
+            <div class="project-image">
+              <img
+                src="assets/bingestudy-preview.webp"
+                alt="BingeStudy Landing Page"
+              />
             </div>
-        </section>
-        <section class="skills" id="skills">
-            <h2 class="section-text">Skills</h2>
-            <div class="line-skills"></div>
-            <div class="skills-flex">
-                  <div class="skill-card">
-                    <h3>Frontend</h3>
-                    <div class="line"></div>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Responsive Design</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Backend</h3>
-                    <div class="line"></div>
-                    <ul>
-                        <li>Firebase</li>
-                        <li>REST API Basics</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Tools & Others</h3>
-                    <div class="line"></div>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>VS Code</li>
-                        <li>n8n</li>
-                        <li>Chrome DevTools</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="projects" id="projects">
-            <h2 class="section-text">Projects</h2>
-            <div class="project-flex">
-                <div class="card">
-                    <h2>BingeStudy <span>Ongoing</span></h2>
-                    <p class="desc">Study platform for group notes sharing</p>
-                    <div class="line"></div>
-                    <p class="used-tech">HTML, CSS, Firebase</p>
-                    <a href="https://github.com/Aswinsankartk/kamova#" target="_blank">
-                        <button class="view-projects">View Project</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <h2>Kamova</h2>
-                    <p class="desc">Get weather based on request</p>
-                    <div class="line"></div>
-                    <p class="used-tech">HTML, CSS, JS, Weather API</p>
-                    <a href="https://github.com/Aswinsankartk/bingestudy" target="_blank">
-                        <button class="view-projects">View Project</button>
-                    </a>
-                </div>
-            </div>
-            
-        </section>
-        <section class="about-me" id="about">
-            <h2 class="section-text">About Me</h2>
-            <div class="line"></div>
-            <p class="p1">I’m a <span>computer science student</span> passionate 
-                about web development and modern 
-                technologies. I enjoy experimenting with 
-                <span>UI layouts, improving user experience, 
-                and building projects</span> that reflect 
-                real-world use cases.
-            <p class="p2">I believe in <span>learning by building</span> and 
-                continuously <span>refining my skills through 
-                practical projects</span> rather than just theory.</p>
-        </section></p>
-        <section class="contact" id="contact">
-            <h2 class="section-text">Contact</h2>
-            <div class="line"></div>
-            <p>Interested in working together or discussing ideas? 
-                Feel free to reach out.</p>
-            <div class="contact-card-section">
-                <div class="contact-card">
-                    <a href="mailto:aswinsankartk@gmail.com" target="_blank">
-                        <svg class="icons" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <h4>aswinsankartk@gmail.com</h4>
-                    </a>     
-                </div>
-                <div class="contact-card">
-                    <a href="https://linkedin.com/in/aswinsankartk" target="_blank">
-                        <svg class="icons" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)" fill="currentColor">
-                                <g id="icons" transform="translate(56.000000, 160.000000)">
-                                    <path d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z" id="linkedin-[#161]"></path></g></g></g></svg>
-                        <h4>linkedin.com/in/aswinsankartk</h4>
-                    </a>
-                </div>
-                <div class="contact-card">
-                    <a href="https://github.com/aswinsankartk" target="_blank">
-                        <svg class="icons" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="currentColor">
-                                <g id="icons" transform="translate(56.000000, 160.000000)">
-                                    <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path></g></g></g></svg>
-                    <h4>github.com/aswinsankartk</h4>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <button id="backToTop" aria-label="Back to top">↑</button>
+            <p class="used-tech">
+              Next.js • Supabase • PostgreSQL • Tailwind CSS • Google Gemini API
+            </p>
+            <a href="https://bingestudy.dpdns.org" target="_blank">
+              <button class="demo">Visit Website</button>
+            </a>
+            <a
+              href="https://github.com/Aswinsankartk/bingestudy"
+              target="_blank"
+            >
+              <button class="view-project">View Project</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="about-me" id="about">
+        <h2 class="section-text">Who I Am</h2>
+        <div class="line"></div>
+        <p class="p1">
+          I'm a Full Stack (MERN) Developer who enjoys building products that
+          solve real-world problems. I specialize in creating scalable web
+          applications with modern JavaScript technologies, intuitive user
+          interfaces, and secure backend systems.
+        </p>
+        <p class="p2">
+          My development philosophy is simple—learn by building. Every project
+          helps me deepen my understanding of software architecture,
+          performance, and user experience while continuously improving my
+          engineering skills.
+        </p>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="section-text">Let's Build Something Great</h2>
+        <div class="line"></div>
+        <p>
+          I'm currently open to full-time software engineering opportunities,
+          internships, and freelance collaborations. If you're building
+          something exciting, I'd love to hear from you.
+        </p>
+        <div class="contact-card-section">
+          <div class="contact-card">
+            <a href="mailto:aswinsankartk@gmail.com" target="_blank">
+              <svg
+                class="icons"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h4>aswinsankartk@gmail.com</h4>
+            </a>
+          </div>
+          <div class="contact-card">
+            <a href="https://linkedin.com/in/aswinsankartk" target="_blank">
+              <svg
+                class="icons"
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-180.000000, -7479.000000)"
+                    fill="currentColor"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+                        id="linkedin-[#161]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <h4>linkedin.com/in/aswinsankartk</h4>
+            </a>
+          </div>
+          <div class="contact-card">
+            <a href="https://github.com/aswinsankartk" target="_blank">
+              <svg
+                class="icons"
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-140.000000, -7559.000000)"
+                    fill="currentColor"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                        id="github-[#142]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <h4>github.com/aswinsankartk</h4>
+            </a>
+          </div>
+        </div>
+      </section>
+      <button id="backToTop" aria-label="Back to top">↑</button>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
