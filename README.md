@@ -94,10 +94,6 @@ Currently improving my skills in:
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aswinsankartk&show_icons=true&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aswinsankartk&layout=compact&theme=tokyonight)
-
 ![GitHub Streak](https://streak-stats.demolab.com?user=aswinsankartk&theme=tokyonight)
 
 ---
