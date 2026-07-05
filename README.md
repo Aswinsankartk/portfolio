@@ -12,7 +12,7 @@ I'm **Aswin Sankar**, an aspiring Full Stack (MERN) Developer passionate about b
 
 I enjoy working across the entire development stack—from crafting beautiful, responsive interfaces to designing secure backend APIs and databases.
 
-Currently, I'm pursuing a **Bachelor of Computer Applications (BCA)** while continuously improving my skills through projects, internships, and open-source learning.
+I'm continuously improving my skills through projects, internships, and open-source learning.
 
 ---
 
@@ -94,15 +94,11 @@ Currently improving my skills in:
 
 ## 📊 GitHub Stats
 
-> Add these after enabling GitHub stats.
-
-```md
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aswinsankartk&show_icons=true&theme=tokyonight)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aswinsankartk&layout=compact&theme=tokyonight)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=aswinsankartk&theme=tokyonight)
-```
 
 ---
 
