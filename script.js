@@ -1,18 +1,24 @@
 const backToTop = document.getElementById("backToTop");
 window.addEventListener("scroll", () => {
-if (window.scrollY > 300) {
-    backToTop.style.opacity="1";
-    backToTop.style.pointerEvents="auto";
-} else {
-    backToTop.style.opacity="0";
-    backToTop.style.pointerEvents="none";
-}
+  if (window.scrollY > 300) {
+    backToTop.style.opacity = "1";
+    backToTop.style.pointerEvents = "auto";
+  } else {
+    backToTop.style.opacity = "0";
+    backToTop.style.pointerEvents = "none";
+  }
 });
 
 backToTop.addEventListener("click", () => {
-window.scrollTo({
+  window.scrollTo({
     top: 0,
-    behavior: "smooth"
-});
+    behavior: "smooth",
+  });
 });
 
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
