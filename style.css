@@ -1,13 +1,15 @@
 :root {
-  --bg-blue: hsl(222, 47%, 11%);
-  --green: hsl(138, 73%, 39%);
-  --primary-text: hsl(0, 0%, 100%);
-  --muted-text: hsl(218, 11%, 65%);
-  --cards: hsl(229, 84%, 5%);
-  --accent: hsl(125, 76%, 80%);
+  --bg-blue: hsl(0, 0%, 4%);
+  --primary-text: hsl(0, 0%, 93%);
+  --muted-text: hsl(0, 0%, 65%);
+  --cards: hsl(0, 0%, 9%);
+  --border: hsl(0, 0%, 10%);
+  --primary-btn: hsl(0, 0%, 93%);
+  --secondary-btn: hsl(0, 0%, 15%);
+  /* --accent: hsl(125, 76%, 80%); */
 }
 * {
-  font-family: "Google Sans Code", monospace;
+  font-family: "Geist", sans-serif;
   margin: 0;
   padding: 0;
   transition: all 0.2s ease-in-out;
@@ -23,11 +25,11 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: hsl(222, 52%, 10%);
+  background-color: hsl(0, 0%, 5%);
   align-content: center;
   padding: 1rem;
-  border-bottom: 0.8px solid hsl(220, 46%, 17%);
-  box-shadow: 0px -2px 10px 2px hsl(222, 53%, 10%);
+  border-bottom: 0.8px solid var(--border);
+  /* box-shadow: 0px -2px 10px 2px hsl(0, 0%, 12%); */
 }
 .menu {
   display: none;
@@ -43,13 +45,16 @@ header {
   color: var(--primary-text);
   font-size: 2.5rem;
 }
+.links.active {
+  background-color: var(--cards);
+}
 .links > a {
-  color: var(--muted-text);
+  color: var(--primary-text);
   text-decoration: none;
   font-size: 1rem;
 }
 .links > a:hover {
-  color: var(--primary-text);
+  color: var(--muted-text);
 }
 nav {
   display: flex;
@@ -60,16 +65,18 @@ nav {
 .hero {
   color: var(--primary-text);
   padding: 2rem;
-  border-bottom: 0.8px solid hsl(220, 46%, 17%);
+  border-bottom: 0.8px solid var(--border);
 }
 .title {
   margin-bottom: 0.5rem;
   font-size: 2.5rem;
+  font-weight: 700;
 }
 .tagline,
 .intro {
   font-size: 1.2rem;
   line-height: 1.3;
+  color: hsl(0, 0%, 85%);
 }
 .tagline {
   margin-bottom: 1rem;
@@ -79,45 +86,36 @@ nav {
   max-width: 800px;
 }
 .role {
-  color: var(--green);
+  color: var(--primary-text);
   margin-bottom: 0.8rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
-.line {
-  border-top: 1px solid hsl(219, 14%, 45%);
 
-  padding: 0.5rem;
-}
 .line-hero {
   width: 80vw;
 }
-.resume {
+.resume,
+.view-projects,
+.demo,
+.view-project {
   border: none;
-  padding: 1rem 1.5rem;
+  padding: 0.7rem 1rem;
   margin-top: 1rem;
   margin-right: 1rem;
-  border-radius: 999px;
+  border-radius: 15px;
   font-size: 1rem;
   font-weight: 500;
   color: var(--primary-text);
-  background-color: hsl(220, 46%, 17%);
-  outline: 0.3px solid var(--primary-text);
-  outline-offset: -2px;
+  background-color: var(--secondary-btn);
 }
 .view-projects {
-  background-color: var(--green);
-  border: none;
-  padding: 1rem 1.5rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  border-radius: 999px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--primary-text);
+  background-color: var(--primary-btn);
+  color: var(--border);
 }
 .skills {
   padding: 2rem;
-  border-bottom: 0.8px solid hsl(220, 46%, 17%);
+  border-bottom: 0.8px solid var(--border);
 }
 .skills-flex {
   display: flex;
@@ -128,14 +126,11 @@ nav {
 }
 .line-skills {
   width: 80vw;
-  border-top: 1px solid hsl(219, 14%, 45%);
+  border-top: 1px solid var(--border);
   padding: 0.5rem;
 }
 .skill-card {
-  /* border: 0.8px solid hsl(220, 36%, 25%); */
   padding: 1.8rem 2rem;
-  /* border-radius: 0.6rem; */
-  /* background-color: hsl(223, 42%, 18%); */
   color: var(--primary-text);
 }
 .skill-card > h3 {
@@ -155,14 +150,14 @@ li {
 }
 .experience {
   padding: 2rem;
-  border-bottom: 0.8px solid hsl(220, 46%, 17%);
+  border-bottom: 0.8px solid var(--border);
 }
 .experience-card {
-  background-color: hsl(223, 42%, 18%);
-  border: 0.8px solid hsl(220, 36%, 25%);
+  background-color: var(--cards);
+  border: 0.8px solid var(--border);
   color: var(--primary-text);
   padding: 2rem;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 .experience-header {
@@ -201,11 +196,8 @@ li {
 .experience-tech span {
   border: 1px solid rgba(255, 255, 255, 0.12);
   padding: 8px 14px;
-  border-radius: 999px;
+  border-radius: 12px;
   font-size: 0.9rem;
-}
-.experience-tech > span:hover {
-  border: 1px solid var(--green);
 }
 .experience-list > li {
   font-size: 1.2rem;
@@ -213,7 +205,7 @@ li {
 }
 .projects {
   padding: 2rem;
-  border-bottom: 0.8px solid hsl(220, 46%, 17%);
+  border-bottom: 0.8px solid var(--border);
 }
 .project-flex {
   display: flex;
@@ -238,11 +230,11 @@ li {
   transform: scale(1.03);
 }
 .card {
-  background-color: hsl(223, 42%, 18%);
-  border: 0.8px solid hsl(220, 36%, 25%);
+  background-color: var(--cards);
+  border: 0.8px solid var(--border);
   color: var(--primary-text);
   padding: 2rem;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 .card > h2 {
   margin-bottom: 0.3rem;
@@ -258,33 +250,13 @@ li {
   font-size: 1.2rem;
 }
 .demo {
-  font-size: 1rem;
-  background-color: var(--green);
-  border: none;
-  padding: 1rem 1.5rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  border-radius: 999px;
-  font-weight: 500;
-  color: var(--primary-text);
-}
-.view-project {
-  border: none;
-  padding: 1rem 1.5rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  border-radius: 999px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--primary-text);
-  background-color: hsl(222, 52%, 10%);
-  outline: 0.3px solid var(--primary-text);
-  outline-offset: -2px;
+  background-color: var(--primary-btn);
+  color: var(--border);
 }
 .about-me {
   padding: 2rem;
   color: var(--primary-text);
-  border-bottom: 0.8px solid hsl(220, 46%, 17%);
+  border-bottom: 0.8px solid var(--border);
   font-size: 1.2rem;
 }
 .contact {
@@ -312,9 +284,9 @@ span {
   gap: 1rem;
 }
 .contact-card {
-  border: 0.8px solid hsl(220, 36%, 25%);
-  background-color: hsl(223, 42%, 18%);
-  border-radius: 6px;
+  border: 0.8px solid var(--border);
+  background-color: var(--cards);
+  border-radius: 12px;
 }
 .contact-card > a {
   text-decoration: none;
@@ -325,12 +297,15 @@ span {
   align-items: center;
   font-size: 1.2rem;
 }
-.contact-card > a:hover {
-  color: var(--green);
+.contact-card > a > h4 {
+  font-weight: 500;
+}
+.contact-card > a :hover {
+  color: var(--muted-text);
 }
 .icons {
   width: auto;
-  height: 2rem;
+  height: 1.5rem;
   margin-right: 1rem;
   color: var(--primary-text);
 }
@@ -343,14 +318,14 @@ span {
   height: 45px;
   border-radius: 50%;
   border: none;
-  background-color: var(--bg-blue);
+  background-color: hsl(0, 0%, 6%);
   color: white;
   font-size: 18px;
   cursor: pointer;
   opacity: 0;
   transition: 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  border: 0.8px solid hsl(221, 34%, 18%);
+  border: 0.8px solid var(--border);
 }
 #backToTop:hover {
   transform: translateY(-4px);
@@ -381,6 +356,10 @@ button:hover {
   background: transparent;
   transform: none;
   scale: 1;
+}
+.menu > svg {
+  width: 2rem;
+  height: 2rem;
 }
 @media (min-width: 320px) {
   html {
@@ -461,7 +440,7 @@ button:hover {
     width: 220px;
     background: hsl(222, 52%, 10%);
     flex-direction: column;
-    border: 1px solid hsl(220, 46%, 17%);
+    border: 1px solid var(--border);
     padding: 1rem;
     border-radius: 8px;
     gap: 1rem;
