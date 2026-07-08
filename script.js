@@ -28,3 +28,12 @@ document.querySelectorAll("#navLinks a").forEach((link) => {
     navLinks.classList.remove("active");
   });
 });
+
+document.addEventListener("click", (e) => {
+  const clickedOutside =
+    !navLinks.contains(e.target) && !menuBtn.contains(e.target);
+
+  if (clickedOutside && navLinks.classList.contains("active")) {
+    navLinks.classList.remove("active");
+  }
+});
